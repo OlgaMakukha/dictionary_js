@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <script defer src="/js/main.js"></script>
+</head>
+<body>
+    <section class="container">
+        <h1>Мой англо-русский словарь</h1>
+        <div class="header-wrapper">
+                <div class="inputs-block">
+                    <div class="input-item">
+                        <label for="eng" class="input-item-title">Слово</label>
+                        <input type="text" id="eng" class="input">
+                    </div>
+                    <div class="input-item">
+                        <label for="rus" class="input-item-title">Перевод</label>
+                        <input type="text" id="rus" class="input">
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="add-word-btn">Добавить</button>
+                    <button id="translate-btn">Перевести</button>
+                </div>
+        </div>
+        
+        <div class="message">
+            <h2 id="message-text"></h2>
+        </div>
+
+        <div class="sort-wrapper">
+            <h2>Мои сохраненные слова — <span id="word-count">0</span> </h2>
+            <button id="sort-btn">Сортировать</button>
+        </div>
+
+        <div class="table-block">
+            <table id="table"></table>
+        </div>
+    </section>
+</body>
+</html>
